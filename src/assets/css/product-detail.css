@@ -1,0 +1,150 @@
+#product-detail-container{
+    padding: 2rem;
+}
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+.product-detail__quantity {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1rem;
+    width: auto;
+    border: 2px dashed #000;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-detail__image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-width: 400px;
+    margin-bottom: 1rem;
+    border: 2px dashed #000;
+    border-radius: 10px;
+    background-color: #f9f9f9; /
+}
+
+.product-detail__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000;
+    text-shadow: -1px -1px 0px #fff, 1px 1px 0px #000;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.product-detail__price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.product-detail__description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.product-detail__stock {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.product-detail__add-to-cart {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 0px #000;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.product-detail__add-to-cart:hover {
+    background-color: #f0f0f0;
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0px #000;
+}
+
+.product-detail__add-to-cart:disabled {
+    background-color: #f9f9f9;
+    color: #aaa;
+    border: 2px dashed #ccc;
+    cursor: not-allowed;
+    text-decoration: line-through;
+    box-shadow: none;
+}
+
+.product-detail__tags {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #ffeb3b;
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #000;
+    font-family: 'Patrick Hand', cursive;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .product-detail {
+        padding: 1rem;
+    }
+
+    .product-detail__title {
+        font-size: 1.8rem;
+    }
+
+    .product-detail__description {
+        font-size: 1rem;
+    }
+
+    .product-detail__price {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .product-detail {
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .product-detail__image {
+        flex: 1;
+    }
+
+    .product-detail__info {
+        flex: 2;
+    }
+
+    .product-detail__add-to-cart{
+        width: auto;
+    }
+}

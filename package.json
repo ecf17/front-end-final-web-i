@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node src/assets/js/home.js"
+  }
+}

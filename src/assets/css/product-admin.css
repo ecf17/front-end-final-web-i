@@ -1,0 +1,129 @@
+.main-container{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+}
+
+.inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-name{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.product-name input{
+    height: fit-content;
+    margin-left: 10px;
+}
+
+.product-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.product-description-input{
+    margin-top: 10px;
+    width: 80%;
+}
+
+.product-category{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.product-category-select{
+    margin-left: 10px;
+}
+
+.product-category-select option{
+    width: 100%;
+    height: 30px;
+}
+
+.save-product-button{
+    width: fit-content;
+    height: 40px;
+    background-color: #9EAB28;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
+@media (640px <= width < 992px){
+    .main-container{
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        padding-left: 20px;
+    }
+    .inputs{
+        grid-template-columns: 1fr;
+    }
+
+    .product-name{
+        margin-left: 0;
+    }
+
+    .product-description{
+        margin-left: 0;
+    }
+
+    .product-category{
+        margin-left: 0;
+    }
+
+    .save-product-button{
+        margin: 0;
+    }
+}
+
+@media (width < 640px){
+    .main-container{
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        padding-left: 20px;
+        margin-left: auto;
+        width: auto;
+    }
+
+    .inputs{
+        grid-template-columns: 1fr;
+    }
+
+    .product-name{
+        margin-left: 0;
+    }
+
+    .product-description{
+        margin-left: 0;
+    }
+
+    .product-category{
+        margin-left: 0;
+    }
+
+    .save-product-button{
+        margin: 0;
+    }
+
+}

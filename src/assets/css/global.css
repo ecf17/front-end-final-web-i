@@ -1,0 +1,213 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007acc;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005f99;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 2px dashed #000;
+    position: relative;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
+    color: #000;
+    line-height: 2.5rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu__toggle-label {
+    display: block;
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+    width: max-content;
+    box-shadow: 3px 3px 0px #000;
+    transition: transform 0.2s ease;
+}
+
+.menu__toggle-label:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px #000;
+}
+
+.menu__toggle-input {
+    display: none;
+}
+
+.menu__list {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 2px dashed #000;
+    position: absolute;
+    right: 0;
+    top: 99%;
+    z-index: 3;
+}
+
+.menu__item {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.menu__link {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.25rem;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-shadow: 3px 3px 0px #000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu__link:hover {
+    background-color: #f0f0f0;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px #000;
+}
+
+.menu__toggle-input:checked + .menu__list {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        justify-content: flex-end;
+    }
+
+    .menu__toggle-label {
+        display: none;
+    }
+
+    .menu__list {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .menu__item {
+        padding: 0 1rem;
+    }
+
+    .menu__link {
+        border: none;
+        box-shadow: none;
+        padding: 0.5rem;
+        transition: color 0.3s ease;
+    }
+
+    .menu__link:hover {
+        transform: none;
+        box-shadow: none;
+        color: #007acc;
+    }
+}
+
+@media (min-width: 992px) {
+    .menu__list {
+        gap: 3rem;
+    }
+
+    .menu__item {
+        padding: 0;
+    }
+}

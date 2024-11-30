@@ -1,0 +1,85 @@
+.auth-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow: 5px 5px 0px #000;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.auth-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: -1px -1px 0 #fff, 1px 1px 0 #000;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.auth-container input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-shadow: 3px 3px 0px #000;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.auth-container input:focus {
+    outline: none;
+    box-shadow: 5px 5px 0px #000;
+    transform: translate(-2px, -2px);
+    transition: all 0.2s ease;
+}
+
+.auth-container button {
+    padding: 0.75rem;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0px #000;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.auth-container button:hover {
+    background-color: #f0f0f0;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 0px #000;
+}
+
+.auth-container p {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.auth-container a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Patrick Hand', cursive;
+    border-bottom: 2px dashed #000; /* Subrayado estilo dibujo */
+}
+
+.auth-container a:hover {
+    text-decoration: none;
+    color: #007acc;
+    transform: translate(-2px, -2px);
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 0px #000;
+}

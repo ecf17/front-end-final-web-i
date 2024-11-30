@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Perfil</title>
+  <link rel="stylesheet" href="../assets/css/profile.css">
+  <link rel="stylesheet" href="../assets/css/global.css">
+</head>
+<body>
+<header class="header">
+</header>
+<main>
+  <section id="profile-container" class="profile-container">
+    <p>Cargando datos del perfil...</p>
+  </section>
+  <button id="edit-profile-button" class="edit-profile-button">Editar Perfil</button>
+  <button id="logout-button" class="logout-button">Cerrar Sesión</button>
+
+  <section id="orders-container" class="orders-container">
+    <h2>Mis Pedidos</h2>
+    <div id="orders-list">
+    </div>
+  </section>
+</main>
+
+<div id="edit-profile-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Editar Perfil</h2>
+    <form id="edit-profile-form">
+      <label for="first_name">Nombre:</label>
+      <input type="text" id="first_name" name="first_name" required>
+
+      <label for="last_name">Apellido:</label>
+      <input type="text" id="last_name" name="last_name" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Guardar Cambios</button>
+      <button type="button" id="cancel-edit-button">Cancelar</button>
+    </form>
+  </div>
+</div>
+
+
+
+<script src="../assets/js/profile.js" type="module"></script>
+<script src="../assets/js/navbar.js" type="module"></script>
+</body>
+</html>

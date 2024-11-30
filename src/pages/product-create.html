@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="../../css/product-admin.css">
+</head>
+<body>
+<main class="main-container">
+    <form id="add-product-form" class="inputs">
+        <div class="product-name">
+            <p>Nombre del Producto:</p>
+            <input type="text" class="Producto-name-input" id="name">
+            <div class="message-error">
+                <p id="product-name-error" class="product-name-error"></p>
+            </div>
+        </div>
+        <div class="product-description">
+            <p>Descripción del Producto</p>
+            <textarea class="product-description-input" id="description"></textarea>
+            <div class="message-error">
+                <p id="product-description-error" class="product-description-error"></p>
+            </div>
+        </div>
+        <div class="product-price">
+            <p>Precio del Producto:</p>
+            <input type="number" class="product-price-input" id="price">
+            <div class="message-error">
+                <p id="product-price-error" class="product-price-error"></p>
+            </div>
+        </div>
+        <div class="product-stock">
+            <p>Stock del Producto:</p>
+            <input type="number" class="product-stock-input" id="stock">
+            <div class="message-error">
+                <p id="product-stock-error" class="product-stock-error"></p>
+            </div>
+        </div>
+        <div class="product-category">
+            <p>Categoría del Producto:</p>
+            <select class="product-category-input" id="category">
+            </select>
+            <div class="message-error">
+                <p id="product-category-error" class="product-category-error"></p>
+            </div>
+        </div>
+
+        <div class="product-image">
+            <p>Imagen del producto:</p>
+            <input type="file" class="product-image-input" id="images" name="images">
+            <div class="message-error">
+                <p id="product-image-error" class="product-image-error"></p>
+            </div>
+        </div>
+        <button type="submit" class="save-product-button">Guardar</button>
+    </form>
+
+</main>
+<script src="../assets/js/admin/insertProduct.js"></script>
+</body>
+</html>
